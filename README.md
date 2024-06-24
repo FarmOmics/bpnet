@@ -152,3 +152,6 @@ cp vmtouch ../
 # Add ~/bin to $PATH
 echo 'export PATH=$PATH:~/bin' >> ~/.bashrc
 ```
+
+### install correct version for wandb
+pip install wandb==0.9.1
