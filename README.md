@@ -153,5 +153,7 @@ cp vmtouch ../
 echo 'export PATH=$PATH:~/bin' >> ~/.bashrc
 ```
 
-### install correct version for wandb
+### install old version of cuDDA
+
+### install the correct version for wandb
 pip install wandb==0.9.1
