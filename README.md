@@ -14,6 +14,9 @@ For more information, see the BPNet manuscript:
 
 *Deep learning at base-resolution reveals motif syntax of the cis-regulatory code* (http://dx.doi.org/10.1101/737981.)
 
+## Citation
+Avsec, Ž., Weilert, M., Shrikumar, A. et al. Base-resolution models of transcription-factor binding reveal soft motif syntax. Nat Genet 53, 354–366 (2021). https://doi.org/10.1038/s41588-021-00782-6
+
 ## Overview
 
 <img src="./docs/theme_dir/bpnet/overview.png" alt="BPNet" style="width: 400px;"/>
