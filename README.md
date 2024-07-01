@@ -157,6 +157,7 @@ echo 'export PATH=$PATH:~/bin' >> ~/.bashrc
 ```
 
 ### install old version of cuDDA (cuDNN v7.0.5 (Dec 5, 2017), for CUDA 9.0)
+https://yztxwd.github.io/BPnet_environment_setup
 Download the cuDNN compiled by cudatoolkit=9.0 from NVIDIA (https://developer.nvidia.com/rdp/cudnn-archive). You need to register a NVIDIA developer account for this.
 
 tar -zxvf cudnn-9.0-linux-x64-v7.tgz
