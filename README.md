@@ -108,8 +108,8 @@ conda install -c bioconda pybedtools bedtools pybigwig pysam genomelake
 pip install git+https://github.com/kundajelab/DeepExplain.git
 pip install tensorflow==1.7 # or tensorflow-gpu if you are using a GPU
 pip install .
+pip install scikit-learn==0.21.3 
 echo 'export HDF5_USE_FILE_LOCKING=FALSE' >> ~/.bashrc
-
 
 When using bpnet from the command line, don't forget to activate the `bpnet` conda environment before:
 
