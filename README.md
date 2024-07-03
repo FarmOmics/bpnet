@@ -102,28 +102,14 @@ Supported python version is 3.6. After installing anaconda ([download page](http
 # Clone this repository
 git clone git@github.com:kundajelab/bpnet.git
 cd bpnet
-
-# create 'bpnet' conda environment
-conda env create -f conda-env.yml
-
-# Disable HDF5 file locking to prevent issues with Keras (https://github.com/h5py/h5py/issues/1082)
-echo 'export HDF5_USE_FILE_LOCKING=FALSE' >> ~/.bashrc
-
-# Activate the conda environment
-source activate bpnet
-```
-
-Alternatively, you could also start a fresh conda environment by running the following
-
-```bash
 conda env create -n bpnet python=3.6
 source activate bpnet
 conda install -c bioconda pybedtools bedtools pybigwig pysam genomelake
 pip install git+https://github.com/kundajelab/DeepExplain.git
 pip install tensorflow~=1.0 # or tensorflow-gpu if you are using a GPU
-pip install bpnet
+pip install .
 echo 'export HDF5_USE_FILE_LOCKING=FALSE' >> ~/.bashrc
-```
+
 
 When using bpnet from the command line, don't forget to activate the `bpnet` conda environment before:
 
@@ -151,13 +137,12 @@ git clone https://github.com/hoytech/vmtouch.git vmtouch_src
 cd vmtouch_src
 make
 # Move the binary to ~/bin
-cp vmtouch ../
-# Add ~/bin to $PATH
-echo 'export PATH=$PATH:~/bin' >> ~/.bashrc
+cp vmtouch /to/conda/env/.
 ```
 
 ### install old version of cuDDA (cuDNN v7.0.5 (Dec 5, 2017), for CUDA 9.0)
 https://yztxwd.github.io/BPnet_environment_setup
+
 Download the cuDNN compiled by cudatoolkit=9.0 from NVIDIA (https://developer.nvidia.com/rdp/cudnn-archive). You need to register a NVIDIA developer account for this.
 
 tar -zxvf cudnn-9.0-linux-x64-v7.tgz
